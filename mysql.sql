@@ -1,0 +1,10 @@
+CREATE DATABASE TESTDB;
+USE TESTDB;
+CREATE TABLE IF NOT EXISTS `foo`(
+   `foo_id` INT UNSIGNED AUTO_INCREMENT,
+   `name` VARCHAR(100) NOT NULL,
+   `desc` VARCHAR(100) NOT NULL,
+    PRIMARY KEY ( `foo_id` )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO foo (`name`, `desc`) VALUES ("foo1", "something for nothing");
